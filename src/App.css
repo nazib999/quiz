@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+.app{
+  display: flex;
+  height: 100vh;
+  color: #fff;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main{
+  width: 75%;
+  background-color: teal;
   display: flex;
   flex-direction: column;
+}
+.top{
+height: 50vh;
+position: relative;
+}
+.stopper{
+  display: flex;
+  height: 100%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.time{
+  width: 100px;
+  height: 100px;
+  border: 5px solid white;
+  font-size: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  left: 100px;
+}
+.bottom{
+height: 50vh;
+}
+.pyramid{
+  width: 25%;
+  background: purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.itemWrapper{
+  width: 100%;
+  padding: 20px;
+}
+.item{
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+.item.active{
+  background: rgb(63, 11, 63);
+}
+.itemNumber{
+  width: 30%;
+}
+.login{
+  background: green;
+  color: #000;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.input{
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  font-size: 20px;
+  padding:0 15px;
+  background: rgba(0,0,0,.3);
+  color: #fff;
+  text-align: center;
+}
+.btn{
+width: 90px;
+height: 30px;
+border-radius: 10px;
+border: 0;
+cursor: pointer;
+font-size: 18px;
+background: rgba(122, 22, 42, 0.5);
+font-weight: 600;
+color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+  .pyramid{
+    min-width: 120px;
   }
-  to {
-    transform: rotate(360deg);
+  .item{
+    flex-direction: column;
+  
   }
 }
