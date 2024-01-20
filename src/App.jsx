@@ -286,7 +286,7 @@ const data = [
 const App = () => {
   const [stop, setStop] = useState(false);
   const [questionNumber,setQuestionNumber]= useState(1);
-  const [earned,setEarned]=useState('$ 0');
+  const [earned,setEarned]=useState('$0');
   const [userName,setUserName] = useState(null);
 
   useEffect(() => {
@@ -301,7 +301,7 @@ const App = () => {
         
           <div className="main">
           {stop ? (
-            <><h1 className="stopper">You have earned {earned} </h1></>
+            <><h1 className="stopper" style={{textAlign:"center"}}>You have earned {earned} </h1></>
           ) : (
             <>
               
